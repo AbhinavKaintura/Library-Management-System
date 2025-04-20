@@ -1,0 +1,28 @@
+{
+    "name": "library-management-system",
+    "version": "1.0.0",
+    "description": "A simple library management system with PostgreSQL database integration",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "keywords": [
+        "library",
+        "management",
+        "express",
+        "postgres"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.3",
+        "dotenv": "^16.5.0",
+        "express": "^4.21.2",
+        "pg": "^8.14.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}

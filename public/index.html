@@ -1,0 +1,82 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Library Management System</h1>
+            <h2>Book Inventory</h2>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="action-buttons">
+            <button class="add-book-btn" id="addBookBtn">Add New Book</button>
+            <button class="view-issued-btn" id="viewIssuedBooksBtn">View Issued Books</button>
+        </div>
+        
+        <div id="loadingIndicator" class="loading">Loading books...</div>
+        
+        <table class="books-table" id="booksTable">
+            <thead>
+                <tr id="tableHeader">
+                    <!-- Table headers will be added dynamically -->
+                </tr>
+            </thead>
+            <tbody id="booksTableBody">
+                <!-- Book data will be added here dynamically -->
+            </tbody>
+        </table>
+        
+        <div class="pagination" id="pagination">
+            <button id="prevPageBtn">Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextPageBtn">Next</button>
+        </div>
+    </main>
+
+    <!-- Add Book Modal -->
+    <div id="addBookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Book</h2>
+            <form id="addBookForm">
+                <!-- Form fields will be added dynamically based on book attributes -->
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Add Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Issue Book Modal -->
+    <div id="issueBookModal" class="modal">
+        <div class="modal-content">
+            <span class="close issue-close">&times;</span>
+            <h2 id="issueBookTitle">Issue Book</h2>
+            <form id="issueBookForm">
+                <div class="form-group">
+                    <label for="user_id">User ID</label>
+                    <input type="text" id="user_id" name="user_id" required>
+                </div>
+                <div class="form-group">
+                    <label for="user_name">User Name</label>
+                    <input type="text" id="user_name" name="user_name" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Issue Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

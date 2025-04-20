@@ -1,0 +1,47 @@
+<!-- issued-books.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issued Books - Library Management System</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Library Management System</h1>
+            <h2>Issued Books</h2>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="action-buttons">
+            <button class="back-btn" id="backToHomeBtn" onclick="window.location.href='/'">Back to Home</button>
+        </div>
+        
+        <div id="loadingIndicator" class="loading">Loading issued books...</div>
+        
+        <table class="books-table" id="issuedBooksTable">
+            <thead>
+                <tr>
+                    <th>Book Title</th>
+                    <th>Author</th>
+                    <th>User ID</th>
+                    <th>User Name</th>
+                    <th>Issue Date</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="issuedBooksTableBody">
+                <!-- Issued books data will be added here dynamically -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
